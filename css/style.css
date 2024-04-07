@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
 }
 html {
   background-color: var(--bg-color-1);
@@ -21,10 +22,8 @@ a {
   --h2-color: #00439e;
   /*colores de fondo*/
   --bg-color-1: #ddda;
-  --bg-color-2: #ccca;
-  --bg-color-3: #bbba;
-  --bg-color-4: #aaa9;
-  --bg-color-5: #999a;
+  --bg-color-5: #aaaa;
+  --bg-color-6: #0085dd;
 }
 /* header */
 header {
@@ -59,6 +58,20 @@ header {
 .icono-clima img {
   width: 13vw;
 }
+/*nav*/
+nav ul{
+  background-color: var(--bg-color-6); 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  padding: 0 8vw;
+}
+nav ul a{
+  font-weight: bold;
+  font-family: var(--h2-font);
+  color: #eee;
+}
 /* main */
 main {
   display: flex;
@@ -76,12 +89,6 @@ main {
   margin-bottom: .7vw;
 }
 /* página principal */
-.princ {
-  background-color: var(--bg-color-2);
-}
-.secun {
-  background-color: var(--bg-color-3);
-}
 .seccion-noticias {
   display: flex;
   flex-direction: column;
@@ -96,9 +103,11 @@ main {
 }
 .noticias-tema {
   display: flex;
+  border-bottom: 1px solid #0085dd;
 }
 .noticias-tema div {
   width: 38vw;
+  padding: 1vw;
 }
 .cita {
   font-style: italic;
@@ -109,7 +118,6 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 18vw;
-  background-color: var(--bg-color-4);
 }
 .enlaces h3 {
   font-family: var(--h2-font);
@@ -124,6 +132,9 @@ main {
   border-radius: 10%;
 }
 /* noticias individuales */
+.destacado{
+  font-style: oblique;
+}
 .cont-not-unica {
   background-color: var(--bg-color-2);
   display: flex;
@@ -143,11 +154,38 @@ main {
 .cont-img-p {
   display: flex;
 }
+.cont-p ul{
+  margin-left: 3vw;
+}
 .cont-not-unica p {
   padding: 1vw;
 }
 .cont-not-unica h4 {
   color: var(--h2-color);
+  margin: 2vw;
+}
+.cont-zona{
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.cont-zona ul li{
+  font-style: italic;
+  list-style-type: circle;
+}
+.cont-tabla{
+  text-align: center;
+}
+table{
+  margin-left: 12vw;
+}
+table, tr, td{
+  border: 1px solid #00439e;
+  border-collapse: collapse;
+  background-color: #00439e11;
+  text-align: center;
+  padding: .2vw 1vw;
 }
 /* footer */
 footer {
@@ -159,5 +197,13 @@ footer {
 }
 footer h4 {
   font-family: var(--h1-font);
-  color: var(--h2-color);
+  color: var(--h1-color);
+  font-size: 3vw;
+}
+footer a{
+  margin: 1vw;
+}
+footer a i{
+  color: #0096ffbb;
+  font-size: 3vw;
 }
