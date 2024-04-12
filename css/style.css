@@ -112,6 +112,9 @@ main {
   display: flex;
   border-bottom: 1px solid #0085dd;
 }
+.noticias-tema div p::first-letter{
+  font-size: 2em;
+}
 .noticias-tema div {
   width: 38vw;
   padding: 1vw;
