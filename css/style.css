@@ -21,8 +21,8 @@ a {
   --h1-color: #0096ff;
   --h2-color: #00439e;
   /*colores de fondo*/
-  --bg-color-1: #ddda;
-  --bg-color-5: #aaaa;
+  --bg-color-1: #eee;
+  --bg-color-5: #ccc;
   --bg-color-6: #0085dd;
 }
 /* header */
@@ -30,7 +30,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 16vw;
+  height: 11vw;
 }
 .logo img {
   width: 16vw;
@@ -46,26 +46,33 @@ header {
   font-size: 6vw;
 }
 .titulo-fecha p {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .icono-clima {
   display: flex;
   align-items: center;
 }
-.datos-clima p {
-  font-size: 2vw;
-}
 .icono-clima img {
-  width: 13vw;
+  width: 10vw;
+}
+.icono-clima a p{
+  margin-top: -25px;
+  font-size: 1.2vw;
+}
+.datos-clima{
+  font-size: 1.3vw;
 }
 /*nav*/
+nav{
+  position: sticky;
+  top: 0;
+}
 nav ul{
   background-color: var(--bg-color-6); 
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5vh;
-  padding: 0 8vw;
 }
 nav ul a{
   font-weight: bold;
@@ -75,6 +82,7 @@ nav ul a{
 /* main */
 main {
   display: flex;
+  margin-bottom: 10vh;
 }
 .container-principal {
   display: flex;
@@ -83,10 +91,9 @@ main {
 .container-principal h2 {
   color: var(--h2-color);
   font-family: var(--h2-font);
-}
-.container-principal h2 {
   margin-top: 0;
   margin-bottom: .7vw;
+  font-size: 3vw;
 }
 /* página principal */
 .seccion-noticias {
@@ -150,6 +157,7 @@ main {
 }
 .cont-not-unica img {
   width: 50vw;
+  height: auto;
 }
 .cont-img-p {
   display: flex;
@@ -193,17 +201,77 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 footer h4 {
   font-family: var(--h1-font);
   color: var(--h1-color);
-  font-size: 3vw;
+  font-size: 2vw;
 }
 footer a{
   margin: 1vw;
 }
-footer a i{
+footer a {
   color: #0096ffbb;
-  font-size: 3vw;
+  font-size: 2vw;
+}
+/* form registro */
+.form-container{
+  width: 100vw;
+  height: 74vh;
+}
+.form-container h2, h3 {
+  text-align: center;
+  color: #00439e;
+}
+.form-container-info{
+  display: flex;
+  justify-content: space-evenly;
+}
+.info-pers div{
+  display: flex;
+  justify-content: space-between;
+  margin: .3vh 0;
+}
+.info-pers input, textarea{
+  padding: 0 1vw;
+  background-color: #0096ff33;
+  border: none;
+}
+.info-pers input:focus{
+  background-color: #0096ff11;
+  outline-color: #0096ff33;
+
+}
+.info-pers textarea:focus{
+  background-color: #0096ff11;
+  outline-color: #0096ff33;
+}
+textarea{
+  resize: none;
+}
+.boton{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton input{
+  width: 130px;
+  height: 40px;
+  border: none;
+  color: #eee;
+  background-color: var(--bg-color-6);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.boton input:active{
+  background-color: #eee;
+  color: var(--bg-color-6);
+  box-shadow: 0px 0px 8px 5px #0085dd;
 }

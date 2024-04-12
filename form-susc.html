@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fa04600604.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>el serrano</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo-sierra.webp" alt="logo-sierra" />
+      </div>
+      <div class="titulo-fecha">
+        <a href="index.html">
+          <h1>el serrano</h1>
+        </a>
+        <p>Viernes 5 de Abril de 2024</p>
+      </div>
+      <div class="icono-clima">
+        <a href="https://www.smn.gob.ar/pronostico/?loc=4265" target="_blank">
+          <img
+            src="images/icono-clima.webp"
+            alt="pronóstico extendido de Tandil"
+            title="pronóstico extendido de Tandil"
+          />
+          <p>pronóstico extendido</p>
+        </a>
+        <div class="datos-clima">
+          <p>T:</p>
+          <p>ST:</p>
+          <p>H:</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="form-container">
+        <h2>Suscribite y te mantendremos informado</h2>
+        <form action="" method="post">
+          <div class="form-container-info">
+            <div class="info-pers">
+              <h3>Datos personales</h3>
+              <div>
+                <label for="nombre">Apellido y nombre: </label>
+                <input type="text" id="nombre" name="nombre" required/>
+              </div>
+              <div>
+                <label for="dni">Documento de identidad: </label>
+                <input type="number" name="dni" id="dni" />
+              </div>
+              <div>
+                <label for="fecha-nac">Fecha de nacimiento: </label>
+                <input type="date" name="fecha-nac" id="fecha-nac" />
+              </div>
+              <div>
+                <label for="dir">Dirección: </label>
+                <input type="text" name="dir" id="dir" />
+              </div>
+              <div>
+                <label for="mail">Correo electrónico: </label>
+                <input type="email" name="mail" id="mail" required/>
+              </div>
+              <h3>Datos Laborales</h3>
+              <div>
+                <label for="nombre-empresa">Nombre de la empresa: </label>
+                <input type="text" id="nombre-empresa" name="nombre-empresa" />
+              </div>
+              <div>
+                <label for="actividad">Actividad: </label>
+                <input type="text" id="actividad" name="actividad" />
+              </div>
+              <div>
+                <label for="dir-empresa">Dirección: </label>
+                <input type="text" id="dir-empresa" name="dir-empresa" />
+              </div>
+              <div>
+                <h4>Observaciones:</h4>
+                <textarea
+                  name="observ"
+                  id="observ"
+                  cols="27"
+                  rows="5"
+                  maxlength="100"
+                ></textarea>
+              </div>
+            </div>
+            <div class="info-pref">
+              <h3>Datos de preferencia</h3>
+              <div class="radio-btn">
+                <p>Para informarse utiliza:</p>
+                <div>
+                  <input
+                    type="radio"
+                    id="movil"
+                    name="info-pref"
+                    value="Teléfono Móvil"
+                  />
+                  <label for="movil">Teléfono móvil</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="tablet"
+                    name="info-pref"
+                    value="Tablet"
+                  />
+                  <label for="tablet">Tablet</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="notebook"
+                    name="info-pref"
+                    value="Notebook"
+                  />
+                  <label for="notebook">Notebook</label>
+                </div>
+              </div>
+              <div class="checklist">
+                <p>Temas de interés:</p>
+                <div>
+                  <input type="checkbox" name="interes" id="politica" />
+                  <label for="politica">Política</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="deportes" />
+                  <label for="deportes">Deportes</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="economia" />
+                  <label for="economia">Economía</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="internacionales" />
+                  <label for="internacionales">Internacionales</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="policiales" />
+                  <label for="policiales">Policiales</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="opinion" />
+                  <label for="opinion">Opinión</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="interes" id="horoscopo" />
+                  <label for="horoscopo">Horóscopo</label>
+                </div>
+              </div>
+              <div class="select">
+                <p>Nivel educativo:</p>
+                <select name="nivel-educativo" id="nivel-educativo">
+                  <option value="sin-estudios" disabled>Sin estudios</option>
+                  <optgroup label="Primarios">
+                    <option value="prim-comp">Completo</option>
+                    <option value="prim-inc">Incompleto</option>
+                  </optgroup>
+                  <optgroup label="Secundarios">
+                    <option value="secun-comp" selected>Completo</option>
+                    <option value="secun-inc">Incompleto</option>
+                  </optgroup>
+                  <optgroup label="Terciarios">
+                    <option value="terc-comp">Completo</option>
+                    <option value="terc-inc">Incompleto</option>
+                  </optgroup>
+                  <optgroup label="Universitarios">
+                    <option value="prim-comp">Completo</option>
+                    <option value="prim-inc">Incompleto</option>
+                  </optgroup>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+              <input type="hidden" name="idForm" value="654321" />
+            </div>
+          </div>
+          <div class="boton">
+            <input type="submit" value="Registrarse" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="index.html">
+          <h4>el serrano - 2024</h4>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://www.facebook.com/Exactas.UNICEN/?locale=es_LA"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/fcex_unicen/?hl=es-la"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/FCEx_UNICEN" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <div>
+        <a href="#">Contáctenos</a>
+        <a href="tel:+2494654321" title="Tel: 2494654321" target="_blank"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+        <a
+          href="mailto:mailEjemplo@exa.com"
+          title="mailEjemplo@exa.com"
+          target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a
+          href="https://wa.me/2494654321?text=Hola, quisiera obtener informacion sobre..."
+          title="whatsapp: 2494654321"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
