@@ -3,20 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ejerciciosJS.css"> 
   <title>Ejercicios JS Parte 1</title>
 </head>
 <body>
   <P>Si desea volver al periódico digital, haga click <a href="index.html">aquí</a>.</P>
+
+  <!-- Ejercicio 2 -->
   <div id="div1"></div>
   <div id="div2"></div>
   <div id="div3"></div>
+  
+  <!-- Ejercicio 3 -->
   <input type="button" value="Saludar" id="btnSaludar">
+  
+  <!-- Ejercicio 4 -->
   <p>Haz click en "rojo", "verde" o "azul".</p>
   <input type="button" value="Rojo" id="btnRojo">
   <input type="button" value="Verde" id="btnVerde">
   <input type="button" value="Azul" id="btnAzul">
   <p>El último boton clickeado fue el: <span  id="ultimoBoton"></span>.</p>
+  
+  <!-- Ejercicio 5 -->
+  <h3>Formulario</h3>
+  <form action="" id="form">
+    <label for="">Nombre:</label>
+    <input type="text" name="nombre">
+    <label for="">Apellido:</label>
+    <input type="text" name="apellido">
+    <input type="submit" value="Enviar">
+  </form>
+  <h1 id="titulo"></h1>
 
+  <!-- Ejercicio 6 -->
+  <h3>Lista de tareas</h3>
+  <form action="" id="formLista">
+    <label for="">Agregar tarea..</label>
+    <input type="text" name="tarea" id="inputTarea">
+    <input type="submit" value="Agregar">
+  </form>
+  <div id="tareas"></div>
+
+  <!-- Ejercicio 7 -->
+  <button type="button" id="marcador">Resaltar</button>
+
+  <!-- Ejercicio 8 -->
+  <div id="textoSecreto" class="txtSecret">
+    <h4>Info secreta</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi quibusdam nobis rem ea optio libero illum doloribus accusamus illo, quae porro nisi, amet eaque ipsam sequi, tenetur omnis soluta provident repellendus inventore dolorum? Cupiditate, rem molestias perspiciatis dolores sequi quos libero, quaerat porro incidunt similique cumque veniam. Obcaecati, labore hic ipsum odit eius cum non placeat debitis tenetur commodi nostrum aliquam? Ea iste corrupti, nostrum veritatis possimus velit porro aut? Illum quia ut voluptate provident voluptates quae consequatur similique aliquid maiores dolores illo tenetur, rerum numquam alias? Quod excepturi sequi optio deserunt impedit temporibus eum reiciendis, quis nisi necessitatibus.</p>
+  </div>
+  <button type="button" id="btnOcultador">BOTON OCULTADOR</button>
+
+  <!-- Ejercicio 9 -->
+  <div id="calculadora">
+    <input type="number" name="" id="primerValor">
+    <select name="" id="operaciones">
+      <option value="">operación</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="*">*</option>
+    </select>
+    <input type="number" name="" id="segundoValor">
+    <button type="button" id="btnCalculo">=</button>
+    <span id="resultado"></span>
+  </div>
+  <a href="JS-ej10.html" target="_blank" rel="noopener noreferrer">Ejercicio 10</a>
   <script src="js/JS-parte1.js"></script>
 </body>
 </html>

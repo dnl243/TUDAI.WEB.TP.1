@@ -223,7 +223,7 @@ footer a {
 }
 /* form registro */
 .form-container{
-  width: 100vw;
+  width: 100%;
   height: 74vh;
 }
 .form-container h2, h3 {
