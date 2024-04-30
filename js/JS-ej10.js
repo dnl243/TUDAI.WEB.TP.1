@@ -12,6 +12,12 @@ function dibujarDiv(x,y){
   nuevoDiv.style.top = y + 'px';
   //insertar dentro del contenedor padre
   $contenedor.appendChild(nuevoDiv);
+  //agregar escucha a un click
+  nuevoDiv.addEventListener('click', msj);
+}
+//aviso posición ocupada
+function msj(){
+  alert("en esa posición ya existe un elemento");
 }
 //ubicación del mouse
 $contenedor.addEventListener('click', (ubicacion) => {
