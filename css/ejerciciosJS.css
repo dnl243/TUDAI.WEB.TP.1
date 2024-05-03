@@ -35,3 +35,20 @@ input[type="submit"]{
 #operaciones{
   text-align: center;
 }
+.ej14 img{
+  width: 400px;
+  height: 300px
+}
+.ej16{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+}
+.ej16 img{
+  width: 400px;
+  height: 300px;
+}
+.ej16 input{
+  text-align: center;
+}

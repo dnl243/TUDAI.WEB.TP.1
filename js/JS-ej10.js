@@ -1,6 +1,14 @@
+"use strict"
+
 const $ = document;
 
 let $contenedor = $.querySelector("#ej10Container");
+
+//aviso posición ocupada
+function msj(e){
+  e.stopPropagation();
+  alert("en esa posición ya existe un elemento");
+}
 
 function dibujarDiv(x,y){
   // creo un div
@@ -15,10 +23,7 @@ function dibujarDiv(x,y){
   //agregar escucha a un click
   nuevoDiv.addEventListener('click', msj);
 }
-//aviso posición ocupada
-function msj(){
-  alert("en esa posición ya existe un elemento");
-}
+
 //ubicación del mouse
 $contenedor.addEventListener('click', (ubicacion) => {
   const x = ubicacion.clientX;
@@ -27,3 +32,5 @@ $contenedor.addEventListener('click', (ubicacion) => {
   // console.log(y);
   dibujarDiv(x,y);
 });
+
+

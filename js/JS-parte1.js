@@ -1,4 +1,4 @@
-"strict";
+"use strict";
 
 // Ejercicio 1
 
@@ -162,3 +162,34 @@ function obtenerResultado() {
     }
     $resultado.innerHTML = resultado;
 }
+
+// Ejercicio 12 (Ruleta)
+// capturo elementos
+let $apuestaRuleta = $.querySelector("#apuestaRuleta");
+let $btnRuleta = $.querySelector("#btnRuleta");
+let $nroResultado = $.querySelector("#nroResultado");
+let $resultados = $.querySelector("#resultados");
+const MAX_RULETA = 36;
+
+// función tirarBolilla
+let nroRuleta;
+function tirarBolilla(){
+  nroRuleta = Math.floor(Math.random()*MAX_RULETA);
+}
+
+// función apostar
+function apostar(){
+  let apuesta = $apuestaRuleta.value;
+  tirarBolilla();
+  $nroResultado.innerHTML = nroRuleta;
+  if(apuesta==nroRuleta){
+    $resultados.innerHTML = "GANÓ";
+  }else{
+    $resultados.innerHTML = "PERDIÓ";
+  };
+}
+
+//dispongo al botón a la escucha
+$btnRuleta.addEventListener("click", apostar);
+
+
