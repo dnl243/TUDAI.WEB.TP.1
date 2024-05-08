@@ -36,8 +36,8 @@ input[type="submit"]{
   text-align: center;
 }
 .ej14 img{
-  width: 400px;
-  height: 300px
+  width: 300px;
+  /* height: 300px */
 }
 .ej16{
   display: flex;
@@ -51,4 +51,25 @@ input[type="submit"]{
 }
 .ej16 input{
   text-align: center;
+}
+.contadorClicks{
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+}
+.contadorClicks p{
+  width: 150px;
+  height: 60px;
+  background-color: #3936;
+  margin: 2vw;
+  text-align: center;
+  font-size: 50px;
+}
+.contadorClicks button{
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
 }

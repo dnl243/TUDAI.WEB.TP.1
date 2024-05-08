@@ -1,85 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/ejerciciosJS.css"> 
-  <title>Ejercicios JS Parte 1</title>
-</head>
-<body>
-  <P>Si desea volver al periódico digital, haga click <a href="index.html">aquí</a>.</P>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ejerciciosJS.css" />
+    <title>Ejercicios JS Parte 1</title>
+  </head>
+  <body>
+    <p>
+      Si desea volver al periódico digital, haga click
+      <a href="index.html">aquí</a>.
+    </p>
 
-  <!-- Ejercicio 2 -->
-  <div id="div1"></div>
-  <div id="div2"></div>
-  <div id="div3"></div>
-  
-  <!-- Ejercicio 3 -->
-  <input type="button" value="Saludar" id="btnSaludar">
-  
-  <!-- Ejercicio 4 -->
-  <p>Haz click en "rojo", "verde" o "azul".</p>
-  <input type="button" value="Rojo" id="btnRojo">
-  <input type="button" value="Verde" id="btnVerde">
-  <input type="button" value="Azul" id="btnAzul">
-  <p>El último boton clickeado fue el: <span  id="ultimoBoton"></span>.</p>
-  
-  <!-- Ejercicio 5 -->
-  <h3>Formulario</h3>
-  <form action="" id="form">
-    <label for="">Nombre:</label>
-    <input type="text" name="nombre">
-    <label for="">Apellido:</label>
-    <input type="text" name="apellido">
-    <input type="submit" value="Enviar">
-  </form>
-  <h1 id="titulo"></h1>
+    <!-- Ejercicio 2 -->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
 
-  <!-- Ejercicio 6 -->
-  <h3>Lista de tareas</h3>
-  <form action="" id="formLista">
-    <label for="">Agregar tarea..</label>
-    <input type="text" name="tarea" id="inputTarea">
-    <input type="submit" value="Agregar">
-  </form>
-  <div id="tareas"></div>
+    <!-- Ejercicio 3 -->
+    <input type="button" value="Saludar" id="btnSaludar" />
 
-  <!-- Ejercicio 7 -->
-  <button type="button" id="marcador">Resaltar</button>
+    <!-- Ejercicio 4 -->
+    <p>Haz click en "rojo", "verde" o "azul".</p>
+    <input type="button" value="Rojo" id="btnRojo" />
+    <input type="button" value="Verde" id="btnVerde" />
+    <input type="button" value="Azul" id="btnAzul" />
+    <p>El último boton clickeado fue el: <span id="ultimoBoton"></span>.</p>
 
-  <!-- Ejercicio 8 -->
-  <div id="textoSecreto" class="txtSecret">
-    <h4>Info secreta</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi quibusdam nobis rem ea optio libero illum doloribus accusamus illo, quae porro nisi, amet eaque ipsam sequi, tenetur omnis soluta provident repellendus inventore dolorum? Cupiditate, rem molestias perspiciatis dolores sequi quos libero, quaerat porro incidunt similique cumque veniam. Obcaecati, labore hic ipsum odit eius cum non placeat debitis tenetur commodi nostrum aliquam? Ea iste corrupti, nostrum veritatis possimus velit porro aut? Illum quia ut voluptate provident voluptates quae consequatur similique aliquid maiores dolores illo tenetur, rerum numquam alias? Quod excepturi sequi optio deserunt impedit temporibus eum reiciendis, quis nisi necessitatibus.</p>
-  </div>
-  <button type="button" id="btnOcultador">BOTON OCULTADOR</button>
+    <!-- Ejercicio 5 -->
+    <h1 id="titulo"></h1>
+    <h3>Formulario</h3>
+    <form action="" id="form">
+      <label for="">Nombre:</label>
+      <input type="text" name="nombre" />
+      <label for="">Apellido:</label>
+      <input type="text" name="apellido" />
+      <input type="submit" value="Enviar" />
+    </form>
 
-  <!-- Ejercicio 9 -->
-  <h3>calculadora</h3>
-  <div id="calculadora">
-    <input type="number" name="" id="primerValor">
-    <select name="" id="operaciones">
-      <option value="">operación</option>
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="/">/</option>
-      <option value="*">*</option>
-    </select>
-    <input type="number" name="" id="segundoValor">
-    <button type="button" id="btnCalculo">=</button>
-    <span id="resultado"></span>
-  </div>
-  <a href="JS-ej10.html" rel="noopener noreferrer">Ejercicio 10</a>
-  <a href="JS-ej11-15.html" rel="noopener noreferrer">Ejercicio 11/15</a>
-  <!-- Ejercicio 12 -->
-  <h3>Ruleta</h3>
-  <div id="ruleta">
-    <input type="number" min="0" max="36" id="apuestaRuleta">
-    <button type="button" id="btnRuleta">"Jugar!"</button>
-    <p>Salió el número <span id="nroResultado"></span>, usted <span id="resultados"></span>!!.</p>
-  </div>
-  <a href="JS-ej14.html" rel="noopener noreferrer">Ejercicio 14</a>
-  <a href="JS-ej16.html" rel="noopener noreferrer">Ejercicio 16</a>
-  <script src="js/JS-parte1.js"></script>
-</body>
+    <!-- Ejercicio 6 -->
+    <h3>Lista de tareas</h3>
+    <form action="" id="formLista">
+      <label for="">Agregar tarea..</label>
+      <input type="text" name="tarea" id="inputTarea" />
+      <input type="submit" value="Agregar" />
+    </form>
+    <div id="tareas"></div>
+
+    <!-- Ejercicio 7 -->
+    <button type="button" id="marcador">Resaltar</button>
+
+    <!-- Ejercicio 8 -->
+    <button type="button" id="btnOcultador">BOTON OCULTADOR</button>
+    <div id="textoSecreto" class="txtSecret">
+      <h4>Info secreta</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quasi
+        quibusdam nobis rem ea optio libero illum doloribus accusamus illo, quae
+        porro nisi, amet eaque ipsam sequi, tenetur omnis soluta provident
+        repellendus inventore dolorum? Cupiditate, rem molestias perspiciatis
+        dolores sequi quos libero, quaerat porro incidunt similique cumque
+        veniam. Obcaecati, labore hic ipsum odit eius cum non placeat debitis
+        tenetur commodi nostrum aliquam? Ea iste corrupti, nostrum veritatis
+        possimus velit porro aut? Illum quia ut voluptate provident voluptates
+        quae consequatur similique aliquid maiores dolores illo tenetur, rerum
+        numquam alias? Quod excepturi sequi optio deserunt impedit temporibus
+        eum reiciendis, quis nisi necessitatibus.
+      </p>
+    </div>
+
+    <!-- Ejercicio 9 -->
+    <h3>calculadora</h3>
+    <div id="calculadora">
+      <input type="number" name="" id="primerValor" />
+      <select name="" id="operaciones">
+        <option value="">operación</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+      </select>
+      <input type="number" name="" id="segundoValor" />
+      <button type="button" id="btnCalculo">=</button>
+      <span id="resultado"></span>
+    </div>
+    <a href="JS-ej10.html" rel="noopener noreferrer">Ejercicio 10</a>
+    <a href="JS-ej11-15.html" rel="noopener noreferrer">Ejercicio 11/15</a>
+    <!-- Ejercicio 12 -->
+    <h3>Ruleta</h3>
+    <div id="ruleta">
+      <input type="number" min="0" max="36" id="apuestaRuleta" />
+      <button type="button" id="btnRuleta">"Jugar!"</button>
+      <p>
+        Salió el número <span id="nroResultado"></span>, usted
+        <span id="resultados"></span>!!.
+      </p>
+    </div>
+    <a href="JS-ej14.html" rel="noopener noreferrer">Ejercicio 14</a>
+    <a href="JS-ej16.html" rel="noopener noreferrer">Ejercicio 16</a>
+    <h2>TP2 JavaScript</h2>
+    <!-- ej JStp2ej02 -->
+    <h4>Ejercicio 2, contadores individuales</h4>
+    <div class="contadorClicks">
+      <button id="btn1" type="button">contador 1</button>
+      <p id="cont1">0</p>
+      <button id="btn2" type="button">contador 2</button>
+      <p id="cont2">0</p>
+      <button id="btn3" type="button">contador 3</button>
+      <p id="cont3">0</p>
+    </div>
+    <!-- ej JStp2ej4 -->
+    <h4>Lista de tareas, hasta 10</h4>
+    <div id="ejTareas">
+      <form id="formTareas" action="">
+        <input id="inputTareas" type="text" name="tareas">
+        <button id="btnTareas" type="submit">Agregar tarea</button>
+      </form>
+      <ul id="ulTareas">
+      </ul>
+    </div>
+    <a href="js2ej7.html" rel="noopener noreferrer">JS2 ej7 galeria de imagenes</a>
+    <script src="js/js2ej2.js"></script>
+    <script src="js/JS-parte1.js"></script>
+  </body>
 </html>

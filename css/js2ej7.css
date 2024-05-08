@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  height: 100vh;
+}
+a{
+  position: absolute;
+}
+#sectionPrincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  background-color: #7fff0099;
+}
+#sectionGaleria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: #1e90ff99;
+}
+#imgPrincipal {
+  width: auto;
+  height: 80%;
+}
+.flecha {
+  text-align: center;
+  width: 5%;
+  height: 5%;
+  font-size: 3vw;
+  color: #00f4;
+}
+.flecha:hover{
+  color: #00f8;
+  cursor: pointer;
+}
+.imgGaleria{
+  margin: 1vw;
+  width: auto;
+  height: 52%;
+}

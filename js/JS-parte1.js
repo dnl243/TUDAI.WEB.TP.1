@@ -1,6 +1,7 @@
 "use strict";
 
 // Ejercicio 1
+//alerts
 
 // alert("JS enlazado y funcionando!");
 // const Nombre = prompt("Ingrese su nombre");
@@ -8,59 +9,41 @@
 // alert("Bienvenido/a "+Nombre+" "+Apellido+" a los ejercicios de Web 1 !!.");
 
 // Ejercicio 2
+//texto desde JS
 
 const $ = document;
-const div1 = $.querySelector("#div1");
-div1.innerHTML = "Este es el div n° 1.";
+const div1 = $.querySelector("#div1").innerHTML = "Este es el div n° 1.";
 
-const div2 = $.querySelector("#div2");
-div2.innerHTML = "Acá va el segundo div.";
+const div2 = $.querySelector("#div2").innerHTML = "Acá va el segundo div.";
 
-const div3 = $.querySelector("#div3");
-div3.innerHTML = "Y por últimmo este es el 3°.";
+const div3 = $.querySelector("#div3").innerHTML = "Y por últimmo este es el 3°.";
 
 //  Ejercicio 3
+//alerts con boton
 
-function saludar() {
+const btnSaludar = $.querySelector("#btnSaludar").addEventListener("click", ()=>{
   alert("Hola de nuevo!");
   const Nombre = prompt("Ingrese su nombre");
   const Apellido = prompt("Ingrese su apellido");
   alert(
     "Bienvenido/a " + Nombre + " " + Apellido + " a los ejercicios de Web 1 !!."
   );
-}
-
-const btnSaludar = $.querySelector("#btnSaludar");
-btnSaludar.addEventListener("click", saludar);
+});
 
 //  Ejercicio 4
+//boton ultimo clickeado
 
 let ultBtn = "(no has clickeado ningun boton)";
 
 const ultimoBoton = $.querySelector("#ultimoBoton");
 ultimoBoton.innerHTML = ultBtn;
 
-const btnRojo = $.querySelector("#btnRojo");
-btnRojo.addEventListener("click", () => (ultimoBoton.innerHTML = "rojo"));
-const btnVerde = $.querySelector("#btnVerde");
-btnVerde.addEventListener("click", () => (ultimoBoton.innerHTML = "verde"));
-const btnAzul = $.querySelector("#btnAzul");
-btnAzul.addEventListener("click", () => (ultimoBoton.innerHTML = "azul"));
-
-// function señalarRojo(){
-//   ultBtn = "rojo";
-// ultimoBoton.innerHTML = ultBtn;
-// };
-// function señalarVerde(){
-//   ultBtn = "verde";
-//   ultimoBoton.innerHTML = ultBtn;
-// };
-// function señalarAzul(){
-//   ultBtn = "azul";
-//   ultimoBoton.innerHTML = ultBtn;
-// };
+const btnRojo = $.querySelector("#btnRojo").addEventListener("click", () => (ultimoBoton.innerHTML = "rojo"));
+const btnVerde = $.querySelector("#btnVerde").addEventListener("click", () => (ultimoBoton.innerHTML = "verde"));
+const btnAzul = $.querySelector("#btnAzul").addEventListener("click", () => (ultimoBoton.innerHTML = "azul"));
 
 // Ejercicio 5
+//h1 desde un form
 // capturo h1
 const titulo = $.querySelector("#titulo");
 // capturo form
@@ -81,6 +64,7 @@ function agregarTitulo(e) {
 }
 
 // Ejercicio 6
+//lista de tareas
 // capturo div
 let listaTareas = $.querySelector("#tareas");
 // capturo form
@@ -103,26 +87,16 @@ function agregarTarea(e) {
 
 // Ejercicio 7
 // capturo el boton
-let marcador = $.querySelector("#marcador");
-marcador.addEventListener("click", resaltar);
-
-function resaltar() {
-  formLista.classList.toggle("resaltado");
-}
+let marcador = $.querySelector("#marcador").addEventListener("click", ()=> formLista.classList.toggle("resaltado"));
 
 // Ejercicio 8
 // capturo el texto
 let $textoSecreto = $.querySelector("#textoSecreto");
 
 // capturo el botón
-let $btnOcultador = $.querySelector("#btnOcultador");
-$btnOcultador.addEventListener("click", () =>
+let $btnOcultador = $.querySelector("#btnOcultador").addEventListener("click", () =>
   $textoSecreto.classList.toggle("txtSecret")
 );
-
-// function ocultar(){
-//   $textoSecreto.classList.toggle("txtSecret");
-// }
 
 //Ejercicio 9 (calculadora)
 //tag select
@@ -131,8 +105,7 @@ let $selectOperaciones = $.querySelector("#operaciones");
 let $valor1 = $.querySelector("#primerValor");
 let $valor2 = $.querySelector("#segundoValor");
 //btn resultado
-let $btnCalculo = $.querySelector("#btnCalculo");
-$btnCalculo.addEventListener("click", obtenerResultado);
+let $btnCalculo = $.querySelector("#btnCalculo").addEventListener("click", obtenerResultado);
 //espacio resultado
 let $resultado = $.querySelector("#resultado");
 // variable resultado
@@ -165,31 +138,14 @@ function obtenerResultado() {
 
 // Ejercicio 12 (Ruleta)
 // capturo elementos
-let $apuestaRuleta = $.querySelector("#apuestaRuleta");
-let $btnRuleta = $.querySelector("#btnRuleta");
-let $nroResultado = $.querySelector("#nroResultado");
 let $resultados = $.querySelector("#resultados");
 const MAX_RULETA = 36;
-
-// función tirarBolilla
-let nroRuleta;
-function tirarBolilla(){
-  nroRuleta = Math.floor(Math.random()*MAX_RULETA);
-}
-
-// función apostar
-function apostar(){
-  let apuesta = $apuestaRuleta.value;
-  tirarBolilla();
-  $nroResultado.innerHTML = nroRuleta;
-  if(apuesta==nroRuleta){
+let $btnRuleta = $.querySelector("#btnRuleta").addEventListener("click", ()=> {
+  let nroRuleta = Math.floor(Math.random()*MAX_RULETA);
+  $.querySelector("#nroResultado").innerHTML = nroRuleta;
+  if(nroRuleta==$.querySelector("#apuestaRuleta").value){
     $resultados.innerHTML = "GANÓ";
   }else{
     $resultados.innerHTML = "PERDIÓ";
   };
-}
-
-//dispongo al botón a la escucha
-$btnRuleta.addEventListener("click", apostar);
-
-
+});
