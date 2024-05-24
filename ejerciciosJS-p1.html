@@ -42,10 +42,10 @@
     <h3>Lista de tareas</h3>
     <form action="" id="formLista">
       <label for="">Agregar tarea..</label>
-      <input type="text" name="tarea" id="inputTarea" />
+      <input type="text" name="tarea"/>
       <input type="submit" value="Agregar" />
     </form>
-    <div id="tareas"></div>
+    <ul id="tareas"></ul>
 
     <!-- Ejercicio 7 -->
     <button type="button" id="marcador">Resaltar</button>
@@ -102,19 +102,19 @@
     <!-- ej JStp2ej02 -->
     <h4>Ejercicio 2, contadores individuales</h4>
     <div class="contadorClicks">
-      <button id="btn1" type="button">contador 1</button>
-      <p id="cont1">0</p>
-      <button id="btn2" type="button">contador 2</button>
-      <p id="cont2">0</p>
-      <button id="btn3" type="button">contador 3</button>
-      <p id="cont3">0</p>
+      <button class="btnCont" type="button">contador 1</button>
+      <p class="contP">0</p>
+      <button class="btnCont" type="button">contador 2</button>
+      <p class="contP">0</p>
+      <button class="btnCont" type="button">contador 3</button>
+      <p class="contP">0</p>
     </div>
     <!-- ej JStp2ej4 -->
     <h4>Lista de tareas, hasta 10</h4>
     <div id="ejTareas">
       <form id="formTareas" action="">
-        <input id="inputTareas" type="text" name="tareas">
-        <button id="btnTareas" type="submit">Agregar tarea</button>
+        <input name="inputTareas" type="text" name="tareas">
+        <button name="btnTareas" type="submit">Agregar tarea</button>
       </form>
       <ul id="ulTareas">
       </ul>

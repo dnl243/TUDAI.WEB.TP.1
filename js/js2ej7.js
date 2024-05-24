@@ -11,15 +11,12 @@ let album = [
 ];
 
 let indice = 0;
-
-let ultIndiceAlbum = album.length - 1;
-
 let sectionGaleria = document.querySelector("#sectionGaleria");
-
 let imgPrincipal = document.querySelector("#imgPrincipal");
 imgPrincipal.src = `images/ejercicios/${album[indice]}.jpg`;
 
 //llenar vista con modelo de datos
+//for in recorre indices
 for (let i in album) {
   //creo img
   const nuevoImg = document.createElement("img");
@@ -38,11 +35,9 @@ for (let i in album) {
 
 //función flecha derecha
 function adelantarImg() {
-  if (indice == album.length - 1) {
-    indice = 0;
-  } else {
+  indice == album.length - 1 ?
+    indice = 0 :
     indice++;
-  }
   imgPrincipal.src = `images/ejercicios/${album[indice]}.jpg`;
 }
 
@@ -51,14 +46,10 @@ document.querySelector("#flechaDe").addEventListener("click", adelantarImg);
 
 //función flecha izquierda
 function retrocederImg() {
-  {
-    if (indice == 0) {
-      indice = album.length - 1;
-    } else {
-      indice--;
-    }
-    imgPrincipal.src = `images/ejercicios/${album[indice]}.jpg`;
-  }
+  indice == 0 ?
+    indice = album.length - 1 :
+    indice--;
+  imgPrincipal.src = `images/ejercicios/${album[indice]}.jpg`;
 }
 
 //flecha izquierda

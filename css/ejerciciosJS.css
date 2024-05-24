@@ -37,7 +37,10 @@ input[type="submit"]{
 }
 .ej14 img{
   width: 300px;
-  /* height: 300px */
+  transition: all .5s;
+}
+.ej14 img:hover{
+  transform: scale(1.3);
 }
 .ej16{
   display: flex;

@@ -1,8 +1,6 @@
 "use strict"
 
-const $ = document;
-
-let $contenedor = $.querySelector("#ej10Container");
+let $contenedor = document.querySelector("#ej10Container");
 
 //aviso posición ocupada
 function msj(e){
@@ -12,7 +10,7 @@ function msj(e){
 
 function dibujarDiv(x,y){
   // creo un div
-  const nuevoDiv = $.createElement('div');
+  const nuevoDiv = document.createElement('div');
   //agregar clase
   nuevoDiv.classList.add('divNuevo');
   //agregar ubicación

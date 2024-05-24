@@ -1,7 +1,9 @@
-'use strict'
+"use strict";
 
 //toogle sobre h1
 
-document.querySelector('#logoToggle').addEventListener('click', ()=>
-  document.querySelector("h1").classList.toggle("toggleTitulos")
+document.querySelector("#logoToggle").addEventListener("click", () =>
+  document.querySelectorAll("h1, h2, h3").forEach((e) => {
+    e.classList.toggle("toggleTitulos");
+  })
 );
